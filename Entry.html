@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Heya, newbie 👋</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      min-height: 100vh;
+      background-image: url('https://i.imgur.com/slwTbNG.gif');
+      background-size: cover;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 24px;
+      margin-top: 60px;
+      opacity: 1;
+      animation: neon 1s infinite alternate;
+    }
+    @keyframes neon {
+      0% {
+        text-shadow: 0 0 5px red;
+      }
+      100% {
+        text-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red, 0 0 80px red;
+      }
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 60px;
+    }
+    .connectionBox {
+      background-color: rgba(0, 0, 0, 0.466); /* 70% transparent black */
+      padding: 40px; /* Updated: increased padding to enlarge the box */
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .connectionSection {
+      font-size: 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .connectionSection img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      animation: spin 2s infinite linear;
+    }
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .copyText {
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+    .copyText:hover {
+      transform: scale(1.1);
+    }
+    .sides {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 20px;
+    }
+    .side {
+      flex: 1;
+      font-size: 18px;
+    }
+    .side ul {
+      padding-left: 20px;
+    }
+    .side li {
+      margin-bottom: 10px;
+    }
+    .lobster-icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      animation: spin 70000s infinite linear;
+    }
+    .highlight {
+      animation: neon 70000s infinite alternate;
+    }
+    .line {
+      width: 100%;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.404);
+      margin-top: 20px;
+    }
+    .social-media-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .social-media-icons a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: rgb(0, 0, 0);
+      overflow: hidden;
+      margin: 0 10px;
+      perspective: 800px;
+      transform-style: preserve-3d;
+      transition: transform 0.3s ease;
+    }
+    .social-media-icons a:hover {
+      transform: rotateY(20deg);
+    }
+    .social-media-icons img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: transform 0.3s ease;
+    }
+    .social-media-icons a:hover img {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://i.imgur.com/y6hDmzE.gif" alt="My Profile Picture" class="profilePicture" style="border-radius: 50%; width: 200px; height: 200px; margin-bottom: 20px;">
+    <h1 id="welcomeText">Heya fella, welcome to my website!</h1>
+    <div class="connectionBox">
+      <div class="sides">
+        <div class="side">
+          <h2 class="highlight">Discord Support:</h2>
+          <ul>
+            <li>Create and manage Discord servers.</li>
+            <li>Assist with Discord-related queries.</li>
+          </ul>
+        </div>
+        <div class="side">
+          <h2 class="highlight">Hobbies:</h2>
+          <ul>
+            <li>Web Development Enthusiast.</li>
+            <li>Aspiring Programmer.</li>
+          </ul>
+        </div>
+        <div class="side">
+          <h2 class="highlight">Find me on social media:</h2>
+          <div class="social-media-icons">
+            <a href="https://no.com">
+              <img src="https://i.imgur.com/hx2t3au.png" alt="Lobster Icon" class="lobster-icon">
+            </a>
+            <a href="https://no.com">
+              <img src="https://i.imgur.com/pTklQDL.png" alt="Lobster Icon" class="lobster-icon">
+            </a>
+            <a href="https://no.com">
+              <img src="https://i.imgur.com/6uPQcTy.png" alt="Lobster Icon" class="lobster-icon">
+            </a>
+            <a href="https://no.com">
+              <img src="https://i.imgur.com/soUhNhx.png" alt="Lobster Icon" class="lobster-icon">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+  </div>
+</body>
+</html>
